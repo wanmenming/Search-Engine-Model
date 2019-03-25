@@ -1,0 +1,16 @@
+Query-dependent text summarization technique is used for snippet generation and was inspired from the textbook Information Retrieval in Practice by Croft Et al. By using Luhn’s significant factor algorithm we were able to select the significant words based on the incoming query to make our snippet generation approach dynamic. The algorithm works by identifying text windows (sentences) and maximizing the amount of significant terms present from the query. Once we had the scores for each window we simply selected the window with the highest score and used that as preview sentence.
+Please view files in the browser to see the snippets clearly.
+
+Algorithm:
+1.	For each query
+    a.	n = 3
+    b.	While n > 0
+        i.	Generate word n-grams for the query based on value of n
+        ii.	Look for each term on the n-grams in the top 100 relevant documents for that query
+        iii.	Get the term which satisfies the criteria for Significance factor using Luhn’s algorithm
+        iv.	If the term is found
+            1.	Selected the term for highlighting
+            2.	Pick 100 characters on either side of the term
+            3.	Generated snippet
+            v.	If the term is not found n = n-1
+    c.	Repeat step b

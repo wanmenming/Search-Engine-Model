@@ -1,0 +1,13 @@
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/retrievalModels/BM25.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/IRProject.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/utils/JSoupClient.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/corpus/CorpusUtils.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/corpus/Token.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/corpus/CorpusGenerator.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/lucene/Lucene.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/retrievalModels/DocumentRetrievalScore.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/Query.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/corpus/ParseOptions.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/retrievalModels/QueryType.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/corpus/InvertedIndex.java
+/Users/jeannei/Projects/Information_Retreival/hw1/ir-project/src/main/java/com/jeannei/app/retrievalModels/RetrievalUtils.java

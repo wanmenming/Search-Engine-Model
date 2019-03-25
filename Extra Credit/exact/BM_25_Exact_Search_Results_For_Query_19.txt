@@ -1,0 +1,2 @@
+query_id Q0 doc_id rank Retrieval_Score system_name
+19 Q0 CACM-2433 1 6.128993573865966 BM25_Exact_Search_CS6200

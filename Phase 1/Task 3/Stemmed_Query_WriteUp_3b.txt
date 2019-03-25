@@ -1,0 +1,76 @@
+The 3 queries we are going to compare are:
+    * Query 2 (Q2): code optim for space effici
+    * Query 3 (Q3): parallel algorithm
+    * Query 6 (Q6): perform evalu and model of comput system
+
+These 3 queries were chosen because it represented the shortest query available and the longest query available
+for comparison. Q2 was chosen because it was the query closest to the median query length. The 3 retrieval systems
+that are going to be compared are BM25, TF-IDF, and Lucene.
+
+Q2:
+
+    The top 5 results between BM25 and Lucene overlapped significantly. Each of the top 5 results appeared
+    in each result set, the main difference was in ordering. The only document that had the same rank in the
+    top 5 between these two systems was CACM-2748 which was ranked #2 in each. None of the top 5 documents
+    from BM25/Lucene appeared in the top 5 list in the TF-IDF system.
+
+    Once we begin to look at the top 10 results from each system things start to get a little more
+    interesting. Out of the top 10 results between BM25 and Lucene the systems overlapped in 6 / 10
+    documents, as you see the two start to deviate once we start comparing more of the result set. Out of
+    the top 10 results between BM25 and TF-IDF overlapped in 1 / 10 documents. You start to see the impact
+    of the parameter tuning we get with BM25 come into effect. Out of the top 10 results between
+    Lucene and TF-IDF overlapped in 2 / 10 documents.
+
+    The deviation in results retrieved between each of the systems grew as more documents are cross
+    compared.
+
+Q3:
+
+    The top 5 results between BM25 and Lucene overlapped partially. Out of the top 5 results 3 / 5
+    documents appeared in each retrieval result set. In addition to that the top 2 documents were ranked in the
+    same order, and those documents were CACM-2714 and CACM-2973, with ranks #1 and #2 respectively.
+    The top 5 results between BM25 and TF-IDF had a minor overlap, 1 / 5 documents appeared in each
+    retrieval set. The top 5 results between Lucene and TF-IDF had a minor overlap, 1 / 5 documents
+    appeared in each retrieval set. All three systems had the same overall #1 ranked document which
+    was CACM-2714.
+
+    Once we begin to look at the top 10 results from each system things start to get a little more
+    interesting. Out of the top 10 results between BM25 and Lucene the systems overlapped in 7 / 10
+    documents, the deviation was not as large as compared to Q2. The documents were CACM-2714, CACM-3075,
+    CACM-2973, CACM-2256, CACM-0950, CACM-2433, and CACM-2785, ordering of results were different.
+
+    Out of the top 10 results between BM25 and TF-IDF overlapped in 6 / 10 documents. Those documents
+    were CACM-2714, CACM-2973, CACM-0950, CACM-2433, CACM-2289, and CACM-2785. Ordering of the results
+    were different. Rank #1 and #10 were the same between these two systems.
+
+    Out of the top 10 results between Lucene and TF-IDF overlapped in 5 / 10 documents. Those documents
+    were CACM-2714, CACM-2973, CACM-0950, CACM-2433, and CACM-2785. Ordering of the results
+    were different. Rank #1 and #10 were the same between these two systems.
+
+Q6:
+
+    The top 5 results between BM25 and Lucene overlapped significantly. Each of the top 5 results appeared
+    in each result set and the rankings were the same. CACM-2318, CACM-3048, CACM-3070, CACM-2741, and
+    CACM-2319. BM25/ Lucene retrieval systems overlapped with the TF-IDF system in 2 / 5 the top 5
+    documents. The the documents that overlapped were the first two results, CACM-2318, CACM-3048, but
+    ordering was different.
+
+    Once we begin to look at the top 10 results from each system things start to get a little more
+    interesting. Out of the top 10 results between BM25 and Lucene the systems overlapped in 9 / 10
+    documents. However the biggest difference is that ordering in which these documents appear begin to change.
+    The 9 documents that overlapped were the same ones mentioned earlier in addition to the following
+    documents CACM-3119, CACM-2894, CACM-3089, and CACM-2542. The only document that had the same ranking
+    in both systems was CACM-2542 at rank #9.
+
+    Out of the top 10 results between BM25 and TF-IDF overlapped in 5 / 10 documents. These documents were
+    CACM-2318, CACM-3048, CACM-3070, CACM-2319, and CACM-2542. The ordering of these documents were different
+    between these two systems.
+
+    Out of the top 10 results between Lucene and TF-IDF overlapped in 5 / 10 documents. Those documents
+    were CACM-2318, CACM-3048, CACM-3070, CACM-2319, and CACM-2542. Ordering of the results
+    were different. Rank #1 and #10 were the same between these two systems.
+
+    Out of the three runs selected to analyze, this run had the most similarity of retrieved documents
+    in the top 10 results. Its interesting to note that this query was also the longest query available. Without
+    looking at the documents contents, we believe these documents have a high amount of the query terms
+    present in the document.
